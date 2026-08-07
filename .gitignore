@@ -1,6 +1,6 @@
 # Kredensial - JANGAN pernah masuk Git
 .env
-
+users.sql
 # Backup database (berisi seluruh data)
 backups/
 *.sql
