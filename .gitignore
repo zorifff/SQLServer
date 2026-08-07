@@ -1,0 +1,9 @@
+# Kredensial - JANGAN pernah masuk Git
+.env
+
+# Backup database (berisi seluruh data)
+backups/
+*.sql
+
+# File sementara
+*.log
