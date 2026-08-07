@@ -3,14 +3,16 @@ services:
     image: mysql:8.4
     container_name: sql-server-mysql
     restart: unless-stopped
+    command: --default-time-zone=+07:00
     environment:
+      TZ: Asia/Jakarta
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
-      # Hanya bind ke 127.0.0.1 (localhost) - TIDAK bisa diakses dari luar mini PC/laptop.
-      # Backend Express nanti connect lewat 127.0.0.1:3306 juga.
+      # Bind ke semua interface supaya bisa diakses dari LAN.
+      # Keamanan dijaga oleh Windows Firewall (dibatasi ke subnet lokal).
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
