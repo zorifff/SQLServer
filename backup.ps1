@@ -1,5 +1,5 @@
 # === Konfigurasi ===
-$projectDir = "D:\Magang\SQL-Server"
+$projectDir = "C:\Project\SQLServer"
 $backupDir  = "$projectDir\backups"
 $retensiHari = 14   # backup lebih tua dari ini akan dihapus otomatis
 
