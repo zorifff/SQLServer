@@ -12,7 +12,7 @@ Siapkan informasi berikut (diberikan oleh pengelola server):
 
 | Keterangan | Isi |
 |---|---|
-| Host / Server | `192.168.8.4` |
+| Host / Server | `172.24.7.70` |
 | Port | `3306` |
 | Database | `SQLserver` |
 | Username | `NIK_Masing_masing` |
